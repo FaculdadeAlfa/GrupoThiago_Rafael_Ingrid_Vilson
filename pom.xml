@@ -4,8 +4,9 @@
 
 	<groupId>cpf-cnpj-utils</groupId>
 	<artifactId>cpf-cnpj-utils</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
+	<url>https://github.com/FaculdadeAlfa/GrupoThiago_Rafael_Ingrid_Vilson</url>
 
 	<name>cpf-cnpj-utils</name>
 
@@ -25,6 +26,27 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
 		</dependency>
-
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<appendAssemblyId>false</appendAssemblyId>
+					<outputDirectory>${project.basedir}/releases/</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
