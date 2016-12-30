@@ -7,6 +7,7 @@
 1. Baixar a [biblioteca](https://github.com/FaculdadeAlfa/GrupoThiago_Rafael_Ingrid_Vilson/raw/master/releases/cpf-cnpj-utils-1.0.0.jar)
 2. Adicionar a biblioteca ao _classpath_ do projeto
 3. Utilizar os métodos estáticos da classe `util.CpfCnpjUtils`
+4. Fazer testes.
 
 ### Gerar uma versão do projeto
 
